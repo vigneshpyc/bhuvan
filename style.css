@@ -1,74 +1,59 @@
 *{
-    margin: 2px;
+    margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
-.page{
+body{
+    background-color: antiquewhite;
+}
+.main-container{
+    margin: 10px;
     display: flex;
-    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
-.nav-bar{
-    background-color: rgb(84, 84, 184);
-    width: 300px;
-    height: 700px;
-    border-radius: 10px;
-    /*border: 1px solid black;*/
+
+.img{
+    width: 100%; 
 }
-.main-page{
-    background-color: blue;
-    width: 80%;
-    height: 700px;
-    border: 1px solid blue;
-}
-@media screen and (max-width:480px) {
-    .main-page{
-        background-color: aliceblue;
-        
-    }
-    .mobile-nav{
-        position: absolute;
-        top: 5px;
-        left: 7px;
-        width: 372px;
-        height: 90px;
-        padding-left: 2px;
-        background-color: blue;
-    }
-    .nav-bar{
-        display: none;
-    }
-    .bhuvan-logo{
-        margin: 10px 10px 10px 60px;
-    }
-    .app{
-        padding: 10px 0px 0px 25px;
-        color: white;
-    }
-    .application{
-        position: absolute;
-        top: 200px;
-        left: 62px;
-        width: 250px;
-        height: 50px;
-        border-radius: 25px;
-        background-color: blue;
-        
-    }  
-}
-.head{
-    font-family: 'Times New Roman', Times, serif;
-    color:blue;
+.content-container{
+    padding: 20px;
     text-align: center;
-    margin-top: 150px;
+    background-color: white;
+    border-radius: 20px;
     
+    margin: 10px;
 }
-nav{
-    text-align: center;
+.content{
+    text-align: left;
+}
+.content-container p{
+    text-align: justify;
+}
+.fa fa-cart-plus{
+    color: aliceblue;
+}
+.img,.content{
+    margin: 10px;
 }
 button{
-    font-family: 'Times New Roman', Times, serif;
-    background: transparent;
-    margin: 50px 50px 0px 50px;
-    border-style: none;
+    background-color: darkcyan;
+    text-align: center;
+    padding: 10px;
+    width: 150px;
     color: aliceblue;
-    font-size: 20px;   
+    font-size: 20px;
+    border-radius: 5px;
+    border: none;
+    width: 100%;
+}
+button i{
+    padding-left: -30px;
+    padding-right: 20px;
+}
+@media only screen and (min-width:768px) {
+    .content-container{
+        display: flex;
+    }
+    
 }
